@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dat54>
+    <Version value="7314721" />
+    <ContainerPaths>
+        <Item>audiodirectory\custom_sound</Item>
+    </ContainerPaths>
+    <Items>
+        <!-- SimpleSounds -->
+        <Item type="SimpleSound">
+            <Name>housealarm_sp</Name>
+            <Header>
+                <Flags value="0x00008004" />
+                <Volume value="1000" />
+                <Category>scripted</Category>
+            </Header>
+            <ContainerName>audiodirectory/custom_sound</ContainerName>
+            <FileName>housealarm</FileName>
+            <WaveSlotNum value="0" />
+        </Item>
+        <Item type="SimpleSound">
+            <Name>doorslam_sp</Name>
+            <Header>
+                <Flags value="0x00008004" />
+                <Volume value="1000" />
+                <Category>scripted</Category>
+            </Header>
+            <ContainerName>audiodirectory/custom_sound</ContainerName>
+            <FileName>doorslam</FileName>
+            <WaveSlotNum value="0" />
+        </Item>
+
+        <!-- SoundSets !-->
+        <Item type="SoundSet">
+            <Name>burglary_soundset</Name>
+            <Header>
+                <Flags value="0xAAAAAAAA" />
+            </Header>
+            <SoundSets>
+                <Item>
+                    <ScriptName>housingalarm</ScriptName>
+                    <ChildSound>housealarm_sp</ChildSound>
+                </Item>
+                <Item>
+                    <ScriptName>kickingdoor</ScriptName>
+                    <ChildSound>doorslam_sp</ChildSound>
+                </Item>
+            </SoundSets>
+        </Item>
+    </Items>
+</Dat54>
